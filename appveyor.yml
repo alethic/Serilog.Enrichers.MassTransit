@@ -1,0 +1,18 @@
+image: Visual Studio 2017
+configuration: Release
+platform: Any CPU
+nuget:
+  account_feed: true
+  project_feed: true
+  disable_publish_on_pr: true
+assembly_info:
+  patch: false
+install:
+  - choco install gitversion.portable -pre -y
+before_build:
+  - gitversion /l console /output buildserver /updateAssemblyInfo
+  - msbuild /t:Restore src/Serilog.Enricher.MassTransit.sln
+build:
+  - msbuild /t:Build src/Serilog.Enricher.MassTransit.sln
+after_build:
+  - msbuild /t:Pack src/Serilog.Enricher.MassTransit.sln
