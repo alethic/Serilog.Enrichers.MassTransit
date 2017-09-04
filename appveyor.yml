@@ -18,4 +18,4 @@ build_script:
 after_build:
   - msbuild /t:Pack src/Serilog.Enricher.MassTransit.sln /p:PackageVersion=%GitVersion_NuGetVersion% /p:AssemblyVersion=%GitVersion_AssemblySemVer% /p:InformationalVersion=%GitVersion_InformationalVersion%
 artifacts:
-  -path: '**\*.nupkg'
+  - path: '**\*.nupkg'
