@@ -12,7 +12,7 @@ install:
 before_build:
   - gitversion /l console /output buildserver /updateAssemblyInfo
   - msbuild /t:Restore src/Serilog.Enricher.MassTransit.sln
-build:
+build_script:
   - msbuild /t:Build src/Serilog.Enricher.MassTransit.sln
 after_build:
   - msbuild /t:Pack src/Serilog.Enricher.MassTransit.sln
