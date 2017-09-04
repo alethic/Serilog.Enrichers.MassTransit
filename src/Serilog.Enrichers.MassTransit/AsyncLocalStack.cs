@@ -7,7 +7,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Threading;
 #endif
 
-namespace Serilog.Enricher.MassTransit
+namespace Serilog.Enrichers.MassTransit
 {
 
     /// <summary>

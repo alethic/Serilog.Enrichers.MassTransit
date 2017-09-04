@@ -3,7 +3,7 @@ using System.Linq;
 
 using GreenPipes;
 
-namespace Serilog.Enricher.MassTransit
+namespace Serilog.Enrichers.MassTransit
 {
 
     class SerilogEnricherSpecification<T> :

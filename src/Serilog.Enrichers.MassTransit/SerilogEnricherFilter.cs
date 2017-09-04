@@ -2,7 +2,7 @@
 
 using GreenPipes;
 
-namespace Serilog.Enricher.MassTransit
+namespace Serilog.Enrichers.MassTransit
 {
 
     /// <summary>

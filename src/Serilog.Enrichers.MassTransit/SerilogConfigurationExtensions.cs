@@ -3,7 +3,7 @@
 using Serilog.Configuration;
 using Serilog.Core;
 
-namespace Serilog.Enricher.MassTransit
+namespace Serilog.Enrichers.MassTransit
 {
 
     /// <summary>

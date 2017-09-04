@@ -1,7 +1,7 @@
 ﻿using Serilog.Core;
 using Serilog.Events;
 
-namespace Serilog.Enricher.MassTransit
+namespace Serilog.Enrichers.MassTransit
 {
 
     /// <summary>

@@ -2,7 +2,7 @@
 
 using MassTransit;
 
-namespace Serilog.Enricher.MassTransit
+namespace Serilog.Enrichers.MassTransit
 {
 
     /// <summary>

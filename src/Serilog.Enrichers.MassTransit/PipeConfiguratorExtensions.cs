@@ -1,7 +1,7 @@
 ﻿using System;
 using GreenPipes;
 
-namespace Serilog.Enricher.MassTransit
+namespace Serilog.Enrichers.MassTransit
 {
 
     public static class PipeConfiguratorExtensions
