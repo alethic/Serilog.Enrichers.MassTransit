@@ -6,10 +6,10 @@ assembly_info:
 
 before_build:
   - ps: gitversion /l console /output buildserver /updateAssemblyInfo
-  - msbuild /t:Restore src/Serilog.Enrichers.MassTransit.sln
+  - msbuild /t:Restore src/Serilog.Enricher.MassTransit.sln
 
 build:
-  - msbuild /t:Build src/Serilog.Enrichers.MassTransit.sln
+  - msbuild /t:Build src/Serilog.Enricher.MassTransit.sln
 
 after_build:
   - cmd: ECHO msbuild /T:Package <Project>\<NuSpec>.nuspec -version "%GitVersion_NuGetVersion%" -prop "target=%CONFIGURATION%"
