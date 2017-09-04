@@ -12,4 +12,4 @@ build:
   - msbuild /t:Build src/Serilog.Enricher.MassTransit.sln
 
 after_build:
-  - cmd: ECHO msbuild /T:Package <Project>\<NuSpec>.nuspec -version "%GitVersion_NuGetVersion%" -prop "target=%CONFIGURATION%"
+  - msbuild /t:Pack src/Serilog.Enricher.MassTransit.sln
