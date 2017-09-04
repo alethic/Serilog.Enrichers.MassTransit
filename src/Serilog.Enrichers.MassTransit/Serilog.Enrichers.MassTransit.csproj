@@ -6,6 +6,8 @@
     <Authors>Jerome Haltom</Authors>
     <Company />
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIconUrl>http://serilog.net/images/serilog-enricher-nuget.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/wasabii/Serilog.Enrichers.MassTransit</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
