@@ -1,4 +1,5 @@
 image: Visual Studio 2017
+version: '{build}'
 configuration: Release
 platform: Any CPU
 nuget:
@@ -13,6 +14,6 @@ before_build:
   - gitversion /l console /output buildserver /updateAssemblyInfo
   - msbuild /t:Restore src/Serilog.Enricher.MassTransit.sln
 build_script:
-  - msbuild /t:Build src/Serilog.Enricher.MassTransit.sln
+  - msbuild /t:Build src/Serilog.Enricher.MassTransit.sln /p:PackageVersion={GitVersion_NuGetVersionV2} /p:InformationalVersion={GitVersion_InformationalVersion}
 after_build:
   - msbuild /t:Pack src/Serilog.Enricher.MassTransit.sln
