@@ -16,4 +16,4 @@ before_build:
 build_script:
   - msbuild /t:Build src/Serilog.Enricher.MassTransit.sln /p:PackageVersion=%GitVersion_NuGetVersionV2% /p:AssemblyVersion=%GitVersion_AssemblySemVer% /p:InformationalVersion=%GitVersion_InformationalVersion%
 after_build:
-  - msbuild /t:Pack src/Serilog.Enricher.MassTransit.sln
+  - msbuild /t:Pack src/Serilog.Enricher.MassTransit.sln /p:PackageVersion=%GitVersion_NuGetVersionV2% /p:AssemblyVersion=%GitVersion_AssemblySemVer% /p:InformationalVersion=%GitVersion_InformationalVersion%
