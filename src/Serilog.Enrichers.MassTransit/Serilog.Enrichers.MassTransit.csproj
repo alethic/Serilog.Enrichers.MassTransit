@@ -5,7 +5,7 @@
     <Description>Provides Serilog enrichment data derived from MassTransit.</Description>
     <Authors>Jerome Haltom</Authors>
     <Company />
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageIconUrl>http://serilog.net/images/serilog-enricher-nuget.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/wasabii/Serilog.Enrichers.MassTransit</PackageProjectUrl>
   </PropertyGroup>
