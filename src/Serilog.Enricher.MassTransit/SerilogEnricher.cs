@@ -4,7 +4,10 @@ using Serilog.Events;
 namespace Serilog.Enricher.MassTransit
 {
 
-    class SerilogEnricher :
+    /// <summary>
+    /// Enriches Serilog data with Mass Transit data.
+    /// </summary>
+    public class SerilogEnricher :
         ILogEventEnricher
     {
 
