@@ -1,9 +1,15 @@
 ﻿using System;
+
 using GreenPipes;
 
-namespace Serilog.Enrichers.MassTransit
+using Serilog.Enrichers.MassTransit;
+
+namespace MassTransit
 {
 
+    /// <summary>
+    /// Provides extension methods for relating MassTransit context information to Serilog.
+    /// </summary>
     public static class PipeConfiguratorExtensions
     {
 

@@ -2,8 +2,9 @@
 
 using Serilog.Configuration;
 using Serilog.Core;
+using Serilog.Enrichers.MassTransit;
 
-namespace Serilog.Enrichers.MassTransit
+namespace Serilog
 {
 
     /// <summary>
@@ -17,7 +18,7 @@ namespace Serilog.Enrichers.MassTransit
         /// </summary>
         /// <param name="configuration"></param>
         /// <returns></returns>
-        public static LoggerConfiguration WithMassTransitContext(this LoggerEnrichmentConfiguration configuration)
+        public static LoggerConfiguration FromMassTransit(this LoggerEnrichmentConfiguration configuration)
         {
             if (configuration == null)
                 throw new ArgumentNullException(nameof(configuration));
