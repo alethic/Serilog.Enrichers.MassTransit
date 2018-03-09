@@ -9,7 +9,7 @@ namespace Serilog.Enrichers.MassTransit
     /// Maintains the current pipe context on the logical call stack.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    class SerilogEnricherFilter<T> : 
+    class SerilogEnricherFilter<T> :
         IFilter<T>
         where T : class, PipeContext
     {

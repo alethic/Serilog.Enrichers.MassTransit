@@ -7,7 +7,7 @@ namespace Serilog.Enrichers.MassTransit
 {
 
     class SerilogEnricherSpecification<T> :
-        IPipeSpecification<T> 
+        IPipeSpecification<T>
         where T : class, PipeContext
     {
 

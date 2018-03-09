@@ -4,7 +4,7 @@ using System.Collections.Immutable;
 #if NET452
 using System.Runtime.Remoting.Messaging;
 #else
-using System.Threading; 
+using System.Threading;
 #endif
 
 namespace Serilog.Enrichers.MassTransit
