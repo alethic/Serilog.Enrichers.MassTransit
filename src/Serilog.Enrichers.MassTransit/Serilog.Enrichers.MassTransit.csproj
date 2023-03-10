@@ -3,11 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
     <Description>Provides Serilog enrichment data derived from MassTransit.</Description>
-    <Authors>Jerome Haltom</Authors>
-    <Company />
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <PackageIconUrl>http://serilog.net/images/serilog-enricher-nuget.png</PackageIconUrl>
-    <PackageProjectUrl>https://github.com/wasabii/Serilog.Enrichers.MassTransit</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
