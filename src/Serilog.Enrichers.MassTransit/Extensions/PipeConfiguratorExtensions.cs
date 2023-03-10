@@ -1,7 +1,5 @@
 ﻿using System;
 
-using GreenPipes;
-
 using Serilog.Enrichers.MassTransit;
 
 namespace MassTransit

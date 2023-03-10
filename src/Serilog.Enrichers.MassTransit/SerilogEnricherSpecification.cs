@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-using GreenPipes;
+using MassTransit;
+using MassTransit.Configuration;
 
 namespace Serilog.Enrichers.MassTransit
 {
