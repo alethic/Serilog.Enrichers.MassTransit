@@ -12,8 +12,7 @@ before_build:
   - ps: $env:FileVersion=$env:GitVersion_MajorMinorPatch.0
   - ps: $env:InformationalVersion=$env:GitVersion_InformationalVersion
   - ps: $env:PackageOutputPath="$env:APPVEYOR_BUILD_FOLDER\pkg"
-  - nuget restore
-  - dotnet restore
+  - dotnet restore src\Serilog.Enrichers.MassTransit.sln
   
 build:
   verbosity: minimal
